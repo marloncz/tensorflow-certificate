@@ -1,6 +1,6 @@
 # Tensorflow Certificate
 
-This repo contains a core preparation of relevant components for the tensorflow certificate. This repo was forked from https://github.com/https-deeplearning-ai/tensorflow-1-public.
+This repo contains a core preparation of relevant components for the tensorflow certificate. This repo is based on https://github.com/https-deeplearning-ai/tensorflow-1-public.
 
 ## Local Setup
 
