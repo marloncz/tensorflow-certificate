@@ -1,10 +1,9 @@
 [tool.poetry]
-name = "tensorflow-prep"
+name = "tensorflow-certificate"
 version = "0.1.0"
 description = ""
 authors = ["marloncz <m.c.schumacher@live.de>"]
 readme = "README.md"
-packages = [{include = "tensorflow_prep"}]
 
 [tool.poetry.dependencies]
 python = "3.8.0"
