@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "tensorflow-prep"
+version = "0.1.0"
+description = ""
+authors = ["marloncz <m.c.schumacher@live.de>"]
+readme = "README.md"
+packages = [{include = "tensorflow_prep"}]
+
+[tool.poetry.dependencies]
+python = "3.8.0"
+pandas = "1.4.2"
+numpy = "1.22.4"
+scipy = "1.7.3"
+pillow = "9.1.1"
+tensorflow = "2.9.0"
+tensorflow-datasets = "4.6.0"
+jupyter = "^1.0.0"
+matplotlib = "^3.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
