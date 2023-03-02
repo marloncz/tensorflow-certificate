@@ -12,7 +12,7 @@ def reshape_and_normalize(images):
     return images
 
 # defining callback
-class myCallback(tf.keras.callbacks.Callback):
+class MyCallback(tf.keras.callbacks.Callback):
     def on_epoch_end(self, epoch, logs={}):
         if logs.get('accuracy') is not None and logs.get('accuracy') >= 0.995:
             print("\nReached 99% accuracy so cancelling training!")
@@ -51,7 +51,7 @@ if __name__ == "__main__":
     model = convolutional_model()
 
     # initialize callback
-    callbacks = myCallback()
+    callbacks = MyCallback()
 
     # model training
     history = model.fit(training_images, training_labels, epochs=10, callbacks=[callbacks])

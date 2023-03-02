@@ -2,7 +2,7 @@ import tensorflow as tf
 from tensorflow.keras.layers import Flatten, Dense
 from tensorflow import keras
 
-class myCallback(tf.keras.callbacks.Callback):
+class MyCallback(tf.keras.callbacks.Callback):
     # Define the correct function signature for on_epoch_end
     def on_epoch_end(self, epoch, logs={}):
         if logs.get('accuracy') is not None and logs.get('accuracy') > 0.99:
@@ -15,7 +15,7 @@ class myCallback(tf.keras.callbacks.Callback):
 def train_mnist(x_train, y_train):
 
     # Instantiate the callback class
-    callbacks = myCallback()
+    callbacks = MyCallback()
 
     # Model
     model = tf.keras.models.Sequential([

@@ -3,7 +3,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 
 # callback
-class myCallback(tf.keras.callbacks.Callback):
+class MyCallback(tf.keras.callbacks.Callback):
     def on_epoch_end(self, epoch, logs={}):
         if logs.get('accuracy') is not None and logs.get('accuracy') > 0.999:
             print("\nReached 99.9% accuracy so cancelling training!")
@@ -25,7 +25,7 @@ def image_generator():
 def train_happy_sad_model(train_generator):
 
     # initialize callback
-    callbacks = myCallback()
+    callbacks = MyCallback()
 
     # model architecture
     model = tf.keras.models.Sequential([
