@@ -45,7 +45,16 @@ def split_data(source_dir, train_dir, val_dir, split_size):
 
 def train_val_generators(train_dir, val_dir):
     # initialize ImageDataGenerator
-    train_datagen = ImageDataGenerator(rescale=1.0 / 255.0)
+    train_datagen = ImageDataGenerator(
+        rescale=1.0 / 255.0,
+        rotation_range=40,
+        width_shift_range=0.2,
+        height_shift_range=0.2,
+        shear_range=0.2,
+        zoom_range=0.2,
+        horizontal_flip=True,
+        fill_mode="nearest",
+    )
 
     # train_generator
     train_generator = train_datagen.flow_from_directory(
