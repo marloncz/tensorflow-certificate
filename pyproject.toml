@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "tensorflow-certificate"
+name = "tensorflow-cert"
 version = "0.1.0"
 description = ""
 authors = ["marloncz <m.c.schumacher@live.de>"]
