@@ -15,10 +15,13 @@ def house_model():
     model.compile(optimizer="adam", loss="mse")
 
     # Training with 1000 epochs
-    model.fit(xs, ys, epochs=1000)
+    model.fit(xs, ys, epochs=2000)
 
     return model
 
 
 if __name__ == "__main__":
-    house_model()
+    model = house_model()
+    new_y = 7.0
+    prediction = model.predict([new_y])[0]
+    print(f"Prediction for input [7.0]: {prediction}")
