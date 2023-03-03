@@ -36,6 +36,7 @@ repos:
     name: flake8
     description: Your Tool For Style Guide Enforcement
     files: \.py$
+    args: [--max-line-length=99]
 
 - repo: https://github.com/terrencepreilly/darglint
   rev: v1.8.1
